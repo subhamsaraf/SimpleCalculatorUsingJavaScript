@@ -37,6 +37,8 @@ function equals()
     }
     
     document.getElementById('displayscreen').value = result;
+    x = result;
+    y = "";
 }
 function Add(){
     num1 = parseFloat(x);
