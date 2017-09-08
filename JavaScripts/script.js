@@ -4,13 +4,13 @@ var result;
 var operationToBEPerformed = "";
 
 function onclickbb(valueReceived){
-    if(valueReceived !== "Add" && valueReceived !== "Sub" && valueReceived !== "Mul" && valueReceived != "Div" && operationToBEPerformed === ""){
+    if(valueReceived !== "+" && valueReceived !== "-" && valueReceived !== "X" && valueReceived != "/" && operationToBEPerformed === ""){
         x += valueReceived;
     }
-    else if(valueReceived === "Add" || valueReceived === "Sub" || valueReceived === "Mul" || valueReceived === "Div"){
+    else if(valueReceived === "+" || valueReceived === "-" || valueReceived === "X" || valueReceived === "/"){
         operationToBEPerformed = valueReceived;
     }
-    else if(operationToBEPerformed !== "" && valueReceived !== "Add" && valueReceived !== "Sub" && valueReceived !== "Mul" && valueReceived !== "Div"){
+    else if(operationToBEPerformed !== "" && valueReceived !== "+" && valueReceived !== "-" && valueReceived !== "X" && valueReceived !== "/"){
         y += valueReceived; 
     }
     else{
@@ -18,41 +18,46 @@ function onclickbb(valueReceived){
         window.onload();
     }
     
+    document.getElementById('displayscreen').value += valueReceived;
+    
 }
 function equals()
 {
-    if(operationToBEPerformed === "Add"){
+    if(operationToBEPerformed === "+"){
         result=Add();
     }
-    else if(operationToBEPerformed === "Sub"){
+    else if(operationToBEPerformed === "-"){
         result=Sub();
     }
-    else if(operationToBEPerformed === "Mul"){
+    else if(operationToBEPerformed === "X"){
         result=Mul();
     }
-    else if(operationToBEPerformed === "Div"){
+    else if(operationToBEPerformed === "/"){
         result=Div();
     }
     
-    alert(result);
+    document.getElementById('displayscreen').value = result;
 }
 function Add(){
-    num1 = parseInt(x);
-    num2 = parseInt(y);
+    num1 = parseFloat(x);
+    num2 = parseFloat(y);
     return num1+num2;
 }
 function Sub(){
-   num1 = parseInt(x);
-    num2 = parseInt(y);
+   num1 = parseFloat(x);
+    num2 = parseFloat(y);
     return num1-num2;
 }
 function Mul(){
-   num1 = parseInt(x);
-    num2 = parseInt(y);
+   num1 = parseFloat(x);
+    num2 = parseFloat(y);
     return num1*num2;
 }
 function Div(){
-   num1 = parseInt(x);
-    num2 = parseInt(y);
+   num1 = parseFloat(x);
+    num2 = parseFloat(y);
     return num1/num2;
+}
+function cleardisplay(){
+    location.reload();
 }

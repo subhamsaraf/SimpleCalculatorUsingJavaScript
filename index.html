@@ -10,35 +10,41 @@
         <title> Simple Calculator  </title>
     </head>
     <body>
-        <div class="maincontainer">
-            <div class="dsiplayscreen"></div>
-            <div class="clearbutton"><button type="submit" class="btn btn-info clear">C</button> </div>
-            <div class="buttonscontainer">
+        <div class="col-md-2 col-md-offset-5 jumboon">
+            <div class="row" >
+                 <label class="heading">Calc</label>
+            </div>
+            <div class="row">
+            <input type="text" id="displayscreen" value="">
+            
+            </div>
+            <div class="row"><button type="submit" class="btn btn-info clear" onclick="cleardisplay()">C</button> </div>
+            <div class="row">
                 <button onclick="onclickbb('1')" class="btn btn-info one">1</button>
                 <button onclick="onclickbb('2')" class="btn btn-info two" >2</button>
                 <button onclick="onclickbb('3')" class="btn btn-info three" id="3">3</button>
-                <button onclick="onclickbb('Add')" class="btn btn-info plus" >+</button>
+                <button onclick="onclickbb('+')" class="btn btn-info plus" >+</button>
                 
             </div>
-            <div class="buttonscontainer">
+            <div class="row">
                 <button onclick="onclickbb('4')" class="btn btn-info one" id="4">4</button>
                 <button onclick="onclickbb('5')" class="btn btn-info two" id="5">5</button>
                 <button onclick="onclickbb('6')" class="btn btn-info three" id="6">6</button>
-                <button onclick="onclickbb('Sub')" class="btn btn-info plus" >-</button>
+                <button onclick="onclickbb('-')" class="btn btn-info plus" >-</button>
                 
             </div>
-            <div class="buttonscontainer">
+            <div class="row">
                 <button onclick="onclickbb('7')" class="btn btn-info one" id="7">7</button>
                 <button onclick="onclickbb('8')" class="btn btn-info two" id="8">8</button>
                 <button onclick="onclickbb('9')" class="btn btn-info three" id="9">9</button>
-                <button onclick="onclickbb('Mul')" class="btn btn-info plus">X</button>
+                <button onclick="onclickbb('X')" class="btn btn-info plus">X</button>
                 
             </div>
-            <div class="buttonscontainer">
-                <button class="btn btn-info one">.</button>
+            <div class="row">
+                <button class="btn btn-info one" onclick="onclickbb('.')">.</button>
                 <button onclick="onclickbb('0')" class="btn btn-info two" id="0">0</button>
                 <button onclick="equals()" class="btn btn-info three">=</button>
-                <button onclick="onclickbb('Div')" class="btn btn-info plus">/</button>
+                <button onclick="onclickbb('/')" class="btn btn-info plus">/</button>
                 
             </div>
         </div>
