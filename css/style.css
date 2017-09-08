@@ -1,0 +1,31 @@
+.buttonscontainer{
+    display: flex;
+    padding: 10px;
+}
+.plus{
+    margin-left: 10%;
+    height: 40px;
+    width: 50px;;
+    
+}
+.one{
+    height: 40px;
+    width: 40px;
+}
+.two{
+    margin-left: 5%;
+    height: 40px;
+    width: 40px;
+    
+}
+.three{
+    margin-left: 5%;
+    height: 40px;
+    width: 40px;
+    
+}
+.clear{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
