@@ -1,0 +1,47 @@
+
+body {
+   background: url(../resources/volkan-olmez-73767.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+.buttonscontainer{
+    display: flex;
+}
+
+.plus{
+    height: 40px;
+    width: 50px;;
+    
+}
+
+.jumboon {
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 100px; 
+}
+
+.one{
+    height: 40px;
+    width: 40px;
+}
+.two{
+    height: 40px;
+    width: 40px;
+    
+}
+.three{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.clear{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+.heading{
+    color: white;
+    text-align: center;
+}
